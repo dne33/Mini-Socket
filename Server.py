@@ -14,7 +14,13 @@ try:
     PORT2 = int(sys.argv[2])
     PORT3 = int(sys.argv[3])
     if PORT1 == PORT2 or PORT2 == PORT3 or PORT1 == PORT3:
-        sys.exit("Error: All Inputs must be different")    
+        sys.exit("Error: All Inputs must be different")   
+        port_list = [PORT1,PORT2,PORT3]
+    for port in port_list:
+        if port < 1024 or port > 64000:
+            sys.exit("Port entered is invalid please enter a number between" \
+                 "1024 and 64000 (Non-inclusive)")
+
 except ValueError:
     sys.exit("Error: All inputs must be an integer value")
     
