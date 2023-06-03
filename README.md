@@ -1,5 +1,5 @@
 # Mini-Socket
-Socket Assignment done in Cosc264 at the Universit of Canterbury. 
+Socket Assignment done in Cosc264 at the University of Canterbury. 
 
 This socket assignment was to create two python files:
 Server creates a server in which a client can call and access the date or time in English, Te reo Maori or German.
